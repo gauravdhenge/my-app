@@ -1,5 +1,4 @@
 const express = require("express");
-const users = require("./MOCK_DATA.json");
 const mongoose = require("mongoose");
 const app = express();
 
@@ -60,14 +59,6 @@ app.get("/users", async (req, res) => {
     `;
     res.send(html);
 });
-
-// app.get("/api/user/:id", (req, res) => {
-//   const id = Number(req.params.id);
-//   const userData = users.find((user) => {
-//     return user.id === id;
-//   });
-//   return res.json(userData);
-// });
 
 //handling post request
 app.post("/api/users", async (req, res) => {
