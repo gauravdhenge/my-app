@@ -8,4 +8,4 @@ function logReqRes(fileName) {
     };
 }
 
-module.exports={logReqRes}
+module.exports = { logReqRes }
