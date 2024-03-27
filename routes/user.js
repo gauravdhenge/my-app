@@ -20,8 +20,7 @@ const router = express.Router();
 
 //Routes
 
-router.route("/").get(handleGetAlluserData).post(handlePostRequest)
-
+router.route("/").get(handleGetAlluserData).post(handlePostRequest);
 router
     .route("/:id")
     .get(handleGetUserById)
